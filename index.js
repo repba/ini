@@ -30,9 +30,9 @@ for (var n = 0; n < files.length; ++n)
             continue;
 
         var name = lines[m].substring(1,lines[m].length-1);
-        var str = "[" + project + name + "]\n";
+        var str = "[" + project.substr(0,4) + name + "]\n";
         str += "link = https://repba.com/?project=" + project + "&report=" + name + "\n";
-        str += "title = " + project + "." + name + "\n";
+        str += "title = " + project + " " + name + "\n";
         console.log(str);
     }
 }
